@@ -8,14 +8,17 @@ const HOSTED_URLS = {
 
 const examples = {
   'example1':
-      'Alice was beginning to get very tired of sitting by her sister on the bank.',
+       'Mr . Weston , you must really have had Aladdin ' s lamp'
   'example2':
-      'Buda-Pesth seems a wonderful place.',
+       'cried the Jackal'
   'example3':
-      'Scepticism was as much the result of knowledge, as knowledge is of scepticism.',
+      'The white vapour lay , as it often does , in lean and palpable layers ; and even the head of the tree was above it in the half - daylight , like a green ship swinging on a sea of foam .
+',
   'example4':
-      'I love Yuki.'
+      'I don ' t say but what edication is a great thing'
 };
+
+const bookname = ['austen-emma.txt', 'bryant-stories.txt','chesterton-ball.txt','edgeworth-parents.txt']
 
 function status(statusText) {
   console.log(statusText);
@@ -48,12 +51,27 @@ function doPredict(predict) {
   const textField = document.getElementById('text-entry');
   const result = predict(textField.value);
   score_string = "Class scores: ";
+  
+  arr = []
+  for(var i in result.score){
+      arr.push(result.score[i].toFixed(3))
+  }
+  var max = arr[0];
+  var maxIndex = 0;
+
+    for (var i = 1; i < arr.length; i++) {
+        if (arr[i] > max) {
+            maxIndex = i;
+            max = arr[i];
+        }
+    }
+  console.log('good')
   for (var x in result.score) {
     score_string += x + " ->  " + result.score[x].toFixed(3) + ", "
   }
   //console.log(score_string);
   status(
-      score_string + ' elapsed: ' + result.elapsed.toFixed(3) + ' ms)');
+      score_string + ' elapsed: ' + result.elapsed.toFixed(3) + ' ms)'+'The sentence is from book '+ bookname[maxIndex]);
 }
 
 function prepUI(predict) {
