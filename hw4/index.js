@@ -12,8 +12,7 @@ const examples = {
   'example2':
        'cried the Jackal',
   'example3':
-      'The white vapour lay , as it often does , in lean and palpable layers and even the head of the tree was above it in the half daylight , like a green ship swinging on a sea of foam .
-',
+      'The white vapour lay , as it often does , in lean and palpable layers and even the head of the tree was above it in the half daylight , like a green ship swinging on a sea of foam',
   'example4':
       'I dont say but what edication is a great thing'
 };
