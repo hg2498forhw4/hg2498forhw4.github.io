@@ -15,7 +15,7 @@ const examples = {
       'The white vapour lay , as it often does , in lean and palpable layers ; and even the head of the tree was above it in the half - daylight , like a green ship swinging on a sea of foam .
 ',
   'example4':
-      'I don ' t say but what edication is a great thing'
+      'I dont say but what edication is a great thing'
 };
 
 const bookname = ['austen-emma.txt', 'bryant-stories.txt','chesterton-ball.txt','edgeworth-parents.txt']
