@@ -10,7 +10,7 @@ const examples = {
   'example1':
        'Mr . Weston , you must really have had Aladdin s lamp',
   'example2':
-       'cried the Jackal,
+       'cried the Jackal',
   'example3':
       'The white vapour lay , as it often does , in lean and palpable layers ; and even the head of the tree was above it in the half - daylight , like a green ship swinging on a sea of foam .
 ',
