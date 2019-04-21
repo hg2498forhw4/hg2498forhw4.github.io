@@ -58,7 +58,7 @@ function doPredict(predict) {
   showColor(result.score[0],result.score[1],result.score[2]);
   //console.log(score_string);
   status(
-      'r:'+result.score[0]+'g:'+result.score[1]+'b:'+result.score[2]);
+      'r:'+result.score[0].toFixed(2)+'   g:'+result.score[1].toFixed(2)+'   b:'+result.score[2].toFixed(2));
 }
 
 function prepUI(predict) {
