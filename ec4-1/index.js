@@ -45,7 +45,7 @@ function disableLoadModelButtons() {
 }
 
 function showColor(r, g, b){
-  document.getElementById('canvas').style.background-color = 'rgb('+r+','+g+','+b+')';
+  document.getElementById('canvas').style.backgroundcolor = 'rgb('+r+','+g+','+b+')';
 }
 
 function doPredict(predict) {
