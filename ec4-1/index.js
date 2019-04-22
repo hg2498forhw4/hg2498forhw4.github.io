@@ -15,7 +15,6 @@ const examples = {
       'Dark Blue',
 };
 
-const bookname = ['austen-emma.txt', 'bryant-stories.txt','chesterton-ball.txt','edgeworth-parents.txt']
 
 function status(statusText) {
   console.log(statusText);
@@ -48,9 +47,14 @@ function showColor(r, g, b){
   document.getElementById('canvas').style.background = 'rgb('+r+','+g+','+b+')';
 }
 
+function processStr(input){
+    arr = input.split('');
+    return arr.join(' ');
+}
+
 function doPredict(predict) {
   const textField = document.getElementById('text-entry');
-  const result = predict(textField.value);
+  const result = predict(processStr(textField.value));
   score_string = "Class scores: ";
   
   
