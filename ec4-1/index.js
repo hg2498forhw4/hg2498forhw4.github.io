@@ -55,7 +55,7 @@ function doPredict(predict) {
   
   
   console.log('good')
-  showColor(result.score[0].toFixed(2)*255,result.score[1].toFixed(2)*255,result.score[2].toFixed(2)*255));
+  showColor(result.score[0].toFixed(2)*255,result.score[1].toFixed(2)*255,result.score[2].toFixed(2)*255);
   //console.log(score_string);
   status(
       'r:'+result.score[0].toFixed(2)*255+'   g:'+result.score[1].toFixed(2)*255+'   b:'+result.score[2].toFixed(2)*255);
